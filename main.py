@@ -29,7 +29,7 @@ while game_is_on:
     carmanager.Move()
     carmanager.Collision_to_the_Lside()
     for car in carmanager.all_cars:
-       if  car.distance(player_acc) <= 20:
-            Level.game_over()
+       if  car.distance(player_acc) < 20:
             game_is_on = False
+            Level.game_over()
 screen.exitonclick()
