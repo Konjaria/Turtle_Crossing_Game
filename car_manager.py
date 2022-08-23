@@ -3,18 +3,15 @@ from random import choice
 from random import randint
 
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
-VELOCITY = [1, 3, 6, 10, 0]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
 
 class CarManager:
     def __init__(self):
       self.all_cars = []
-      self.velocity = 1
       self.car_speed = MOVE_INCREMENT
 
     def Create_cars(self):
-        random_number = randint(1,2 )
         random_number = randint(1, 6)
         if random_number == 1:
             car = Turtle()
